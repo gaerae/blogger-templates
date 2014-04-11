@@ -1,4 +1,7 @@
-blogger-templates
+About
 =================
+Google Blogger Templates
 
-Templates for Google Blogger
+Templates
+=================
+- G1404 Simple Preview: http://blogger-template-g1404-simple.blogspot.com
