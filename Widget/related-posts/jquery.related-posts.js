@@ -61,12 +61,12 @@
          * @method getOptions
          */
         onOption: function() {
-            var _content, _option, _blog_url;
+            var _content, _option;
             // 위젯 및 옵션 확인
             if (HELPER_NAMESPACE) {
                 var _content = HELPER_NAMESPACE.html().replace(/\n|\r\n/g, '');
+                if ((_content = _content.match(/<!--\s*(\{.+\});?\s*--\>/)) && _content.length == 2) _content = _content[1];
                 if (_content) {
-                    if ((_content = _content.match(/<!--\s*(\{.+\});?\s*--\>/)) && _content.length == 2) _content = _content[1];
                     if (_content.indexOf('{') < 0) _content = '{' + _content + '}';
                     try {
                         _option = eval('(' + _content + ')')
