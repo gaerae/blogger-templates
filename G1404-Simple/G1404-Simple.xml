@@ -1050,10 +1050,7 @@
                                         if (entry.gd$extendedProperty) {
                                             for (var k in entry.gd$extendedProperty) {
                                                 if (entry.gd$extendedProperty[k].name == 'blogger.contentRemoved') {
-                                                    return '
-                                                    <span class="deleted-comment">
-                                                    ' + entry.content.$t + '
-                                                    </span>';
+                                                    return '<span class="deleted-comment">' + entry.content.$t + '</span>';
                                                 }
                                             }
                                         }
